@@ -1,12 +1,12 @@
 plugin.run = (contents, options) ->
 	"""
 
-# >>> Framer Fold >>>
+# <fold>
 # Enable Share UI inside Framer
 
 Framer.Extras.ShareInfo.enable()
 
-# <<< Framer Fold <<<
+# </fold>
 
 #{contents}
 	"""

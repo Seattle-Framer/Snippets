@@ -1,6 +1,6 @@
 plugin.run = (contents, options) ->
 	"""
-################################################################################
+# <fold>
 # Scale the screen to fit viewer window
 
 scaleScreen = (modifier = 1, delay = .05) -> 
@@ -8,7 +8,7 @@ scaleScreen = (modifier = 1, delay = .05) ->
 		Framer.Device.setDeviceScale (Canvas.width/Screen.width) * modifier, true
 scaleScreen()
 
-################################################################################
+# </fold>
 
 #{contents}
 

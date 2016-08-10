@@ -1,6 +1,6 @@
 plugin.run = (contents, options) ->
 	"""
-# >>> Framer Fold >>>
+# <fold>
 # Project Info
 #
 # Information entered here will be shown when shared.
@@ -12,7 +12,7 @@ Framer.Info =
 	author: "Jordan Robert Dobson"
 	twitter: "jordandobson"
 
-# <<< Framer Fold <<<
+# </fold>
 
 #{contents}
 	"""

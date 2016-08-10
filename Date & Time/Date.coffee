@@ -2,7 +2,7 @@ plugin.run = (contents, options) ->
 	"""
 #{contents}
 
-# >>> Framer Fold >>>
+# <fold>
 # Parse Date Values
 	
 today = new Date().toLocaleDateString()
@@ -10,9 +10,9 @@ today = new Date().toLocaleDateString()
 ##########################################################################################
 # Get day of month (assuming a date format of "10 August 2016" or "August 10, 2016")
 
-regExDay   = ///(\d{1,2})\b///i
-regExMonth = ///(\D{3,})\s///i
-regExYear  = ///\s(\d{2,})$///i
+regExDay   = ///(\\d{1,2})\\b///i
+regExMonth = ///(\\D{3,})\\s///i
+regExYear  = ///\\s(\\d{2,})$///i
 
 date =
 	day:   today.match(regExDay  )[1]
@@ -37,6 +37,6 @@ dayString = switch dayOfWeek
 	
 print dayString
 
-# <<< Framer Fold <<<
+# </fold>
 
 """
